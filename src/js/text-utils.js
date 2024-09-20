@@ -28,13 +28,13 @@
 //   the whole raw filter list to be held in memory just because we cut out
 //   the title as a substring.
 
-function orphanizeString(s) {
+export function orphanizeString(s) {
     return JSON.parse(JSON.stringify(s));
 }
 
 /******************************************************************************/
 
-class LineIterator {
+export class LineIterator {
     constructor(text, offset) {
         this.text = text;
         this.textLen = this.text.length;
@@ -72,7 +72,7 @@ class LineIterator {
 // The field iterator is less CPU-intensive than when using native
 // String.split().
 
-class FieldIterator {
+export class FieldIterator {
     constructor(sep) {
         this.text = '';
         this.sep = sep;
@@ -100,8 +100,8 @@ class FieldIterator {
 
 /******************************************************************************/
 
-export {
-    FieldIterator,
-    LineIterator,
-    orphanizeString,
-};
+// export {
+//     FieldIterator,
+//     LineIterator,
+//     orphanizeString,
+// };

@@ -23,18 +23,17 @@
 
 /******************************************************************************/
 
-import publicSuffixList from './lib/publicsuffixlist/publicsuffixlist.js';
-import punycode from './lib/punycode.js';
+import publicSuffixList from './../../src/lib/publicsuffixlist/publicsuffixlist.js';
+import punycode from './../../src/lib/punycode.js';
 
-import staticNetFilteringEngine from './js/static-net-filtering.js';
-import { FilteringContext } from './js/filtering-context.js';
-import { LineIterator } from './js/text-utils.js';
-import * as sfp from './js/static-filtering-parser.js';
-
+import staticNetFilteringEngine from './../../src/js/static-net-filtering.js';
+import { FilteringContext } from './../../src/js/filtering-context.js';
+import { LineIterator } from './../../src/js/text-utils.js';
+import * as sfp from './../../src/js/static-filtering-parser.js';
 import {
     CompiledListReader,
     CompiledListWriter
-} from './js/static-filtering-io.js';
+} from './../../src/js/static-filtering-io.js';
 
 /******************************************************************************/
 

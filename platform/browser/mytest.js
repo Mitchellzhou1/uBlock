@@ -3,7 +3,7 @@ import {
     enableWASM,
     pslInit,
     restart,
-} from './main.mjs';
+} from './main.js';
 
 (async ( ) => {
     await enableWASM('.');

@@ -24,5 +24,7 @@
   },
   "devDependencies": {
     "scaling-palm-tree": "github:mjethani/scaling-palm-tree#15cf1ab"
-  }
+  },
+  "type": "module",
+  "presets": ["@babel/preset-env"]
 }
